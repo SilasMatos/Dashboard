@@ -37,16 +37,18 @@ main {
 }
 
 .menu-list li {
-  padding: 15px 25px;
-  font-size: 1.1em;
-  width: 100%;
+width: 100%;
 }
 
-.menu-list li:hover {
-  background-color: #fff;
+.menu-list li a:hover{
+  color: #000;
+  background-color: #fff; 
+  transition: 0.6s;
 }
-
 .menu-list a {
+  padding: 15px 25px;
+  font-size: 1.0em;
+  width: 100%;
   text-decoration: none;
   color: #fff;
   display: flex;
@@ -150,7 +152,7 @@ main {
 }
 
 .title-card p {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   color: rgb(108, 108, 108);
 }
@@ -189,9 +191,9 @@ main {
 }
 
 .chart-card p {
-  font-style: italic;
+ 
   font-weight: bold;
-  font-size: 15pt;
+  font-size: 13spt;
   color: #07396e;
 
 }
@@ -243,4 +245,23 @@ main {
 .profile-sidebar {
   box-shadow: -2px -2px 5px #e6e5e5,
     2px 2px 5px #dddddd;
+}
+
+.table-container{
+  background-color: rgb(255, 255, 255);
+  padding: 2rem;
+  height: 600px;
+}
+
+
+#data-table th {
+  color: rgb(147, 147, 148);
+}
+#data-table td {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+}
+#data-table tbody{
+  border: 1px solid red;
 }
