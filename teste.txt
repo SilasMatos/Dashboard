@@ -1,3 +1,0 @@
-<button id="toggleSidebar" onclick="toggleSidebar()">
-        Toggle Sidebar
-      </button>

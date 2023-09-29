@@ -1,11 +1,13 @@
 $(document).ready(function () {
-  $('#data-table').DataTable({
-    language: {
-      url: 'https://cdn.datatables.net/plug-ins/1.11.5/i18n/pt-BR.json'
-    },
-    pageLength: 10,
-    lengthMenu: [10, 25, 50, 100]
-  })
+  var table = $('#example')
+    .DataTable({
+      responsive: true,
+      language: {
+        url: 'https://cdn.datatables.net/plug-ins/1.11.5/i18n/pt-BR.json'
+      }
+    })
+    .columns.adjust()
+    .responsive.recalc()
 })
 
 const menuItems = document.querySelectorAll('.menu-list li')
@@ -20,13 +22,19 @@ menuItems.forEach(item => {
   })
 })
 document.addEventListener('DOMContentLoaded', function () {
-  // Seu código JavaScript aqui
   const sidebar = document.getElementById('sidebar')
   const toggleButton = document.getElementById('toggle-sidebar')
+  const toggleIcon = document.getElementById('toggle-icon')
 
   toggleButton.addEventListener('click', () => {
     sidebar.classList.toggle('collapsed')
+    // Verifique o estado da barra lateral e atualize o ícone com base nisso
+    if (sidebar.classList.contains('collapsed')) {
+      toggleIcon.classList.remove('fa-chevron-left')
+      toggleIcon.classList.add('fa-chevron-right')
+    } else {
+      toggleIcon.classList.remove('fa-chevron-right')
+      toggleIcon.classList.add('fa-chevron-left')
+    }
   })
-
-  // Resto do seu código aqui...
 })
