@@ -1,3 +1,4 @@
+// DATA TABLE
 $(document).ready(function () {
   var table = $('#example')
     .DataTable({
@@ -10,6 +11,7 @@ $(document).ready(function () {
     .responsive.recalc()
 })
 
+// EVENTO DE REMOVER A CLASSE ATIVA
 const menuItems = document.querySelectorAll('.menu-list li')
 
 menuItems.forEach(item => {
@@ -21,6 +23,7 @@ menuItems.forEach(item => {
     item.classList.add('ativo')
   })
 })
+
 document.addEventListener('DOMContentLoaded', function () {
   const sidebar = document.getElementById('sidebar')
   const toggleButton = document.getElementById('toggle-sidebar')
@@ -28,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   toggleButton.addEventListener('click', () => {
     sidebar.classList.toggle('collapsed')
-    // Verifique o estado da barra lateral e atualize o ícone com base nisso
+
     if (sidebar.classList.contains('collapsed')) {
       toggleIcon.classList.remove('fa-chevron-left')
       toggleIcon.classList.add('fa-chevron-right')
@@ -39,18 +42,3 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 })
 const links = document.querySelectorAll('.menu-list li a')
-
-// Adiciona um evento de mouseover para cada link
-links.forEach(link => {
-  link.addEventListener('mouseover', () => {
-    const tooltip = link.querySelector('.tooltip-text')
-    tooltip.style.opacity = '1'
-    tooltip.style.transform = 'translateY(-50%) translateX(5px)'
-  })
-
-  link.addEventListener('mouseout', () => {
-    const tooltip = link.querySelector('.tooltip-text')
-    tooltip.style.opacity = '0'
-    tooltip.style.transform = 'translateY(-50%) translateX(0)'
-  })
-})

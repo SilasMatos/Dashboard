@@ -29,7 +29,7 @@ main {
 
 .sidebar.collapsed .menu-text {
   display: none;
-  /* Oculte os textos do menu */
+
 }
 
 
@@ -102,14 +102,16 @@ main {
 
 .menu-list li {
   width: 100%;
-position: relative;
+  position: relative;
 }
+
 .menu-list li:hover .tooltip-text {
   opacity: 1;
   transform: translateY(-50%) translateX(5px);
   transition: 0.6s;
-  /* Ajuste para distância do botão */
+
 }
+
 .tooltip-text {
   position: absolute;
   top: 50%;
@@ -131,6 +133,7 @@ position: relative;
   pointer-events: none;
   transition: opacity 0.3s, transform 0.3s;
 }
+
 .menu-list li a {
   display: flex;
   align-items: center;
