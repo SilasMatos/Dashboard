@@ -102,9 +102,35 @@ main {
 
 .menu-list li {
   width: 100%;
-
+position: relative;
 }
+.menu-list li:hover .tooltip-text {
+  opacity: 1;
+  transform: translateY(-50%) translateX(5px);
+  transition: 0.6s;
+  /* Ajuste para distância do botão */
+}
+.tooltip-text {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.911);
+  color: #000000;
+  border-radius: 35px;
+  font-weight: 500;
+  transition: 0.8s;
+  font-style: italic;
+  box-shadow: 5px 5px 26px #c1c1c1,
+    -5px -5px 26px #ffffff;
 
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s, transform 0.3s;
+}
 .menu-list li a {
   display: flex;
   align-items: center;

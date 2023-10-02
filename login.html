@@ -1,64 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/login.css" />
-    <title>Login</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
   </head>
   <body>
-    <section class="min-h-screen flex items-center justify-center bg-edit">
-      <div
-        class="bg-edit-2 rounded-2xl flex items-center shadow-lg max-w-3xl p-5"
-      >
-        <div class="md:w-1/2 px-16">
-          <h2 class="font-bold text-2xl flex justify-center">Logo</h2>
-          <p class="text-sm mt-4">you already a member easily log in</p>
-          <form action="" class="flex flex-col gap-4">
-            <input
-              class="p-2 mt-8 rounded-xl border"
-              name="email"
-              type="text"
-              placeholder="Email"
-            />
-            <div class="relative">
-              <input
-                class="p-2 mt-6 rounded-xl w-full border"
-                type="password"
-                name="password"
-                placeholder="Password"
-                id=""
-              />
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-eye absolute top-1/2 right-3 translate-y-1/3"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"
-                />
-                <path
-                  d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"
-                />
-              </svg>
+    <div class="section-login">
+      <div class="main-login">
+        <div class="left">
+          <section class="copy">
+            <img src="/img/teamwork high five.gif" alt="" />
+          </section>
+        </div>
+        <div class="right">
+          <form action="">
+            <section class="copy">
+              <h2>Login</h2>
+              <div class="login-container">
+                <p></p>
+              </div>
+            </section>
+            <div class="input-container name">
+              <label for="fname">Empresa</label>
+              <select class="input" name="" id="">
+                <option value="">Escolha uma opção</option>
+                <option value="">FSA</option>
+                <option value="">SSA</option>
+              </select>
             </div>
-            <button class="bg-[#3FBDE6] text-white font-bold py-2 rounded-xl">
-              Entrar
-            </button>
+            <div class="input-container email">
+              <label for="Login">Login</label>
+              <input type="Login" for="Login" name="Login" />
+            </div>
+            <div class="input-container password">
+              <label for="password">Senha</label>
+              <input type="password" for="password" name="password" />
+              <i class="far fa-eye-slash"></i>
+            </div>
+
+            <button class="signup-btn" type="submit">Entrar</button>
           </form>
         </div>
-        <div class="md:block hidden w-1/2 p-5">
-          <img
-            class="rounded-2xl"
-            src="./img/pexels-photo-5453828.webp"
-            alt=""
-          />
-        </div>
       </div>
-    </section>
+    </div>
   </body>
 </html>

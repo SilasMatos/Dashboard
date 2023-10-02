@@ -38,3 +38,19 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   })
 })
+const links = document.querySelectorAll('.menu-list li a')
+
+// Adiciona um evento de mouseover para cada link
+links.forEach(link => {
+  link.addEventListener('mouseover', () => {
+    const tooltip = link.querySelector('.tooltip-text')
+    tooltip.style.opacity = '1'
+    tooltip.style.transform = 'translateY(-50%) translateX(5px)'
+  })
+
+  link.addEventListener('mouseout', () => {
+    const tooltip = link.querySelector('.tooltip-text')
+    tooltip.style.opacity = '0'
+    tooltip.style.transform = 'translateY(-50%) translateX(0)'
+  })
+})
